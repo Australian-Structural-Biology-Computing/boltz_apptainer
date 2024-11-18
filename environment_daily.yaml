@@ -1,0 +1,12 @@
+name: boltz
+channels:
+  - conda-forge
+  - bioconda
+  - nvidia
+  - biocore
+
+dependencies:
+  - python=3.12
+  - pip=24
+  - pip:
+      - git+https://github.com/jwohlwend/boltz.git@main
