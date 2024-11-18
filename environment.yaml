@@ -1,0 +1,13 @@
+name: boltz
+channels:
+  - conda-forge
+  - bioconda
+  - nvidia
+  - biocore
+
+dependencies:
+  - python
+  - rdkit=2024.3.6
+  - pip
+  - pip:
+      - boltz
