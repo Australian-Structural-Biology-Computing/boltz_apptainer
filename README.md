@@ -1,5 +1,5 @@
 # boltz_apptainer
-Files required for setting up [Boltz1](https://github.com/jwohlwend/boltz) in an apptainer image.
+Files which allow you to set up [Boltz1](https://github.com/jwohlwend/boltz) in an apptainer image. This allows for running on HPCs without sudo or docker access.
 
 To build the image:
 `apptainer build --nv boltz.sif boltz.def`
