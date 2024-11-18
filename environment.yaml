@@ -6,8 +6,7 @@ channels:
   - biocore
 
 dependencies:
-  - python
-  - rdkit=2024.3.6
-  - pip
+  - python=3.12
+  - pip=24
   - pip:
       - boltz

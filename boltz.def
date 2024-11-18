@@ -1,15 +1,15 @@
 Bootstrap: docker
-From: nvidia/cuda:12.4.1-cudnn-devel-ubuntu22.04
+From: nvidia/cuda:12.4.1-cudnn-runtime-ubuntu22.04
 
 %labels
     Author j.caley@unsw.edu.au
-    Version 0.1
+    Version 0.1.2
 
 %files
     ./environment.yaml .
 
 %post
-    apt update && DEBIAN_FRONTEND=noninteractive apt install --no-install-recommends -y wget git
+    apt update && DEBIAN_FRONTEND=noninteractive apt install --no-install-recommends -y wget git build-essential
 
     wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
     bash Miniforge3-Linux-x86_64.sh -b -p /opt/miniforge
