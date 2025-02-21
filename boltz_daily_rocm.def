@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: rocm/dev-ubuntu-22.04:6.3.2
+From: rocm/dev-ubuntu-22.04:6.2.4
 
 %labels
     Author j.caley@unsw.edu.au
